@@ -21,6 +21,13 @@ body {
     animation: backgroundTransition 8s ease-in-out infinite;
 }
 
+.img-profile {
+    width: 200px;
+    height: 200px;
+    border: 3px solid rgb(92, 0, 121);
+    border-radius: 50%;
+}
+
 h1 {
     text-transform: uppercase;
     letter-spacing: 4px;
@@ -115,6 +122,10 @@ a:hover {
     display: none;
 }
 
+#toggle:checked + .menu-button + .menu {
+    display: block;
+  }
+
 /* MENU */
 
 .menu {
@@ -126,7 +137,7 @@ a:hover {
     width: 40px;
     border-radius: 50%;
     box-shadow: 0px 0px 0px 0px #ffffff;
-    z-index: -1;
+    z-index: 1000;
     transition: 800ms ease-in-out 0s;
 }
 
@@ -139,8 +150,10 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #ffffff;
     z-index: 2;
     opacity: 0;
+    z-index: 999;
     visibility: hidden;
     transition: 800ms ease-in-out 0s;
 }
@@ -192,6 +205,7 @@ a:hover {
 #toggle:checked ~ .menu-items {
     visibility: visible;
     opacity: 1;
+    z-index: 999;
 }
 
 /* CARD */
@@ -307,6 +321,7 @@ a:hover {
     position: relative;
     animation: backgroundProjetos 8s ease-in-out infinite;
     margin-bottom: 0;
+    z-index: -1;
 }
 
 @keyframes backgroundProjetos {
@@ -328,9 +343,26 @@ a:hover {
     justify-content: center;
     width: 100%;
     margin-bottom: 25px;
+    z-index: 1;
 }
 
-.projetos1 {
+.projetos-ListaDeTarefas {
+    height: 350px;
+    width: 700px;
+    margin: 3rem 0 0;
+    background-image: url('./lista\ de\ tarefas.jpg');    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.projetos-DevBurguer {
     height: 300px;
     width: 700px;
     margin: 3rem 0 0;
@@ -344,7 +376,7 @@ a:hover {
     color: #ffffff;
     cursor: pointer;
 }
-.projetos2 {
+.projetos-BarberShop {
     height: 350px;
     width: 650px;
     margin: 3rem 0 0;
@@ -458,16 +490,12 @@ a:hover {
         flex-direction: column-reverse;
     }
 
-    .projetos1{
+    .projetos-BarberShop, .projetos-DevBurguer, .projetos-ListaDeTarefas{
         height: 250px;
         width: 350px;
         object-fit: contain;
-    
-    } .projetos2{
-        height: 250px;
-        width: 350px;
-        object-fit: contain;
-    }
+    }    
+   
 
     .projetos-text {
         width: 90%;

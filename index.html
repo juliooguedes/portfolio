@@ -23,19 +23,20 @@
                     <nav class="menu-items">
                         <ul>
                             <li>
-                                <a href="#">Home</a>
+                                <a href="#Home" onclick="closeMenu()">Home</a>
                             </li>
                             <li>
-                                <a href="#">Midias Socias</a>
+                                <a href="#Midias" onclick="closeMenu()">Midias Socias</a>
                             </li>
                             <li>
-                                <a href="mailto:juliooguedes@gmail.com">Contato</a>
+                                <a href="mailto:juliooguedes@gmail.com" onclick="closeMenu()">Contato</a>
                             </li>
                         </ul>
                     </nav>
                 </div>
             </div>
         </div>
+        <img class="img-profile" src="./profile.jpeg" alt="">
         <h1>Julio Guedes</h1>
         <h2>Front-end Developer</h2>
         <div class="social-media" id="Projetos">
@@ -43,7 +44,7 @@
             <a href="https://github.com/juliooguedes" target="_blank">GitHub</a>
         </div>
     </header>
-    <main class="container" id="Sobre">
+    <main class="container" id="Midias">
         <div class="card-container">
             <div class="card-text">
                 No meu perfil do GitHub, você encontrará uma variedade de projetos que demonstram minhas habilidades em programação, desde pequenos scripts até aplicações completas. Gosto de experimentar novas tecnologias e contribuir para a comunidade de código aberto, e adoraria receber seu feedback e colaboração.
@@ -71,13 +72,24 @@
         </div>
     </main>
 
-    <header class="background-container">          
+    <header class="background-container">
+        <div class="projetos-container">
+            <div class="projetos-wrapper">
+                <div class="projetos-ListaDeTarefas">
+                    <a href="https://devburguer-blond.vercel.app/" class="link-acess" target="_blank"></a>    
+                </div>
+            </div> 
+            <div class="projetos-text">
+                <h2>Lista de Tarefas</h2>                    
+                Este projeto de lista de tarefas em React, desenvolvido como parte do início dos estudos, que permite adicionar, completar e remover tarefas com uma interface intuitiva e dinâmica.</div>
+            </div>
+        </div>          
             <div class="projetos-container">
                 <div class="projetos-text">
                     <h2>Dev Burguer</h2>                    
                     Este projeto envolveu a criação de um site para uma Hamburgueria utilizando HTML, CSS, JavaScript e Tailwind CSS.                </div>
                     <div class="projetos-wrapper">
-                        <div class="projetos1">
+                        <div class="projetos-DevBurguer">
                             <a href="https://devburguer-blond.vercel.app/" class="link-acess" target="_blank"></a>    
                         </div>
                     </div> 
@@ -85,7 +97,7 @@
             </div>
             <div class="projetos-container"> 
                 <div class="projetos-wrapper">
-                    <div class="projetos2">                    
+                    <div class="projetos-BarberShop">                    
                         <a href="https://juliooguedes.github.io/barbershop/" class="link-acess" target="_blank"></a>  
                     </div>
                 </div>
@@ -100,6 +112,7 @@
         <p>FEITO POR JULIO GUEDES</p>
     </footer>
     
+    <script src="script.js"></script>
 
 </body>
 
