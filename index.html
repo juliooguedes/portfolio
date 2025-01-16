@@ -1,130 +1,334 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="icon" href="./img/profile.png" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Portfolio Julio Guedes</title>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <link rel="icon" type="icon" href="./profile.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Julio Guedes</title>
-</head>
+  <body>
+    <header>
+      <a href="#home" class="logo">Julio Guedes</a>
 
-<body>
-    <header class="header-wrapper" id="Home">
-        <div class="header">
-            <div class="checkbox-container">
-                <div class="checkbox-wrapper">
-                    <input type="checkbox" id="toggle">
-                    <label class="checkbox" for="toggle">
-                        <div class="trace"></div>
-                        <div class="trace"></div>
-                        <div class="trace"></div>
-                    </label>
-                    <div class="menu"></div>
-                    <nav class="menu-items">
-                        <ul>
-                            <li>
-                                <a href="#Home" onclick="closeMenu()">Home</a>
-                            </li>
-                            <li>
-                                <a href="#Midias" onclick="closeMenu()">Midias Socias</a>
-                            </li>
-                            <li>
-                                <a href="mailto:juliooguedes@gmail.com" onclick="closeMenu()">Contato</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </div>
-        <img class="img-profile" src="./profile.jpeg" alt="">
+      <div class="nav">
+        <a href="#home">Inicio</a>
+        <a href="#services">Serviços</a>
+        <a href="#portfolio">Trabalhos</a>
+        <a href="#about">Sobre</a>
+      </div>
+
+      <div class="nav-resposive">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#about">About</a>
+      </div>
+      <div class="menu-hamburguer">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
+    </header>
+
+    <!-- home section -->
+    <section class="home" id="home">
+      <div class="home-content">
+        <h3>Hello World!</h3>
         <h1>Julio Guedes</h1>
-        <h2>Front-end Developer</h2>
-        <div class="social-media" id="Projetos">
-            <a href="https://linkedin.com/in/juliooguedes" target="_blank">Linkedin</a>
-            <a href="https://github.com/juliooguedes" target="_blank">GitHub</a>
-        </div>
-    </header>
-    <main class="container" id="Midias">
-        <div class="card-container">
-            <div class="card-text">
-                No meu perfil do GitHub, você encontrará uma variedade de projetos que demonstram minhas habilidades em
-                programação, desde pequenos scripts até aplicações completas. Gosto de experimentar novas tecnologias e
-                contribuir para a comunidade de código aberto, e adoraria receber seu feedback e colaboração.
-            </div>
-            <div class="card">
-                <div class="card-wrapper">
-                    <a href="https://github.com/juliooguedes" class="link-acess" target="_blank"></a>
-                    <h2>GitHub</h2>
-                    <p>Veja meus projetos</p>
-                </div>
-            </div>
-        </div>
-        <div class="card-container">
-            <div class="card">
-                <div class="card-wrapper">
-                    <a href="https://linkedin.com/in/juliooguedes" class="link-acess" target="_blank"></a>
-                    <h2>Linkedin</h2>
-                    <p>Acompanhe minha carreira</p>
+        <h3>Full-Stack <span>Developer</span></h3>
 
-                </div>
-            </div>
-            <div class="card-text">
-                No LinkedIn, costumo compartilhar artigos, participar de discussões relevantes, e me manter atualizado
-                com as tendências do mercado. Adoraria ter você como parte da minha rede profissional para que possamos
-                trocar conhecimentos e oportunidades.
-            </div>
-        </div>
-    </main>
+        <p>
+          Procuro Estágio em Desenvolvimento de Software para aplicar habilidades
+          técnicas e contribuir em projetos desafiadores, adquirindo experiência
+          prática para impulsionar minha carreira na área.
+        </p>
 
-    <header class="background-container">
-        <div class="projetos-container">
-            <div class="projetos-wrapper">
-                <div class="projetos-ListaDeTarefas">
-                    <a href="https://juliooguedes.github.io/Lista-de-Tarefas/" class="link-acess" target="_blank"></a>
-                </div>
-            </div>
-            <div class="projetos-text">
-                <h2>Lista de Tarefas</h2>
-                Este projeto de lista de tarefas em React, desenvolvido como parte do início dos estudos, que permite
-                adicionar, completar e remover tarefas com uma interface intuitiva e dinâmica.
-            </div>
+        <div class="social-media">
+          <a href="https://www.linkedin.com/in/juliooguedes/" target="_blank"><i class="bx bxl-linkedin"></i></a>
+          <a href="https://www.github.com/juliooguedes/" target="_blank"><i class="bx bxl-github"></i></a>
         </div>
-        </div>
-        <div class="projetos-container">
-            <div class="projetos-text">
-                <h2>Dev Burguer</h2>
-                Este projeto envolveu a criação de um site para uma Hamburgueria utilizando HTML, CSS, JavaScript e
-                Tailwind CSS.
-            </div>
-            <div class="projetos-wrapper">
-                <div class="projetos-DevBurguer">
-                    <a href="https://devburguer-blond.vercel.app/" class="link-acess" target="_blank"></a>
-                </div>
-            </div>
-        </div>
-        </div>
-        <div class="projetos-container">
-            <div class="projetos-wrapper">
-                <div class="projetos-BarberShop">
-                    <a href="https://juliooguedes.github.io/barbershop/" class="link-acess" target="_blank"></a>
-                </div>
-            </div>
-            <div class="projetos-text">
-                <h2>Barber Shop</h2>
-                Utilizando HTML, CSS e um toque de JavaScript, mergulhei na criação desse projeto que não apenas
-                aprimorou minhas habilidades técnicas, mas também me permitiu explorar a criatividade no design e
-                interatividade.
 
+        <div>
+          <a href="img/CV JULIO GUEDES.pdf" class="btn" target="_blank">Downloand CV</a>
+        </div>
+      </div>
+
+      <div class="home-img">
+        <img src="img/profile.jpeg" alt="profile picture" />
+      </div>
+    </section>
+    <!-- /home section -->
+
+    <!-- service section -->
+    <section class="services" id="services">
+      <h2>Nossos <span>Serviços</span></h2>
+
+      <div class="services-content">
+        <div class="services-box">
+          <i class="bx bx-code-alt"></i>
+          <h3>Desenvolvedor Front-end</h3>
+
+          <p>
+            Minha abordagem no front-end é focada em criar interfaces dinâmicas e intuitivas, com uma experiência de usuário única. Trabalho com criatividade e atenção aos detalhes para garantir que cada página seja visualmente atraente e funcione de forma fluida em diversos dispositivos.
+          </p>
+
+          <!-- <a href="#" class="btn">Leia mais</a> -->
+        </div>
+
+        <div class="services-box">
+          <i class="bx bx-code-curly"></i>
+          <h3>Desenvolvedor Back-End</h3>
+
+          <p>
+            Embora ainda esteja adquirindo experiência em back-end, tenho me dedicado a aprender e entender como criar sistemas eficientes, trabalhar com bancos de dados e desenvolver APIs. Estou em busca de aplicar meus conhecimentos para construir soluções escaláveis e bem integradas
+          </p>
+        </div>
+          <!-- <a href="#" class="btn">Leia mais</a> -->
+      </div>
+        <div class="icon-languagens">
+          <div>
+            <img src="img/html-5.png" alt="">
+            <img src="img/css-3.png" alt="">
+            <img src="img/js.png" alt="">
+            <img src="img/java (1).png" alt="">
+          </div>
+        </div>
+      
+    </section>
+    <!-- /serive section -->
+
+    <!-- portfolio section -->
+
+    <section class="portfolio" id="portfolio">
+      <h2>Ultimos <span>Projetos</span></h2>
+
+      <div class="portfolio-container">
+        <div class="portfolio-box">
+          <img src="img/everest.png" alt="Portfolio 1" />
+
+          <div class="portfolio-layer">
+            <h4>Clínica Everest</h4>
+
+            <p>
+            Site institucional desenvolvido em HTML, CSS e JS com integração ao WhatsApp.
+            </p>
+
+            <a href="https://clinicaeverest.vercel.app/" target="_blank"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+        <div class="portfolio-box">
+          <img src="img/Rato Cantor.png" alt="Portfolio 1" />
+
+          <div class="portfolio-layer">
+            <h4>Rato Cantor</h4>
+
+            <p>
+              Site para Músico desenvolvido em HTML, CSS e JS com integração ao WhatsApp e Spotify.
+            </p>
+
+            <a href="https://devburguer-blond.vercel.app/" target="_blank"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+        <div class="portfolio-box">
+          <img src="img/Dev Burguer.png" alt="Portfolio 1" />
+
+          <div class="portfolio-layer">
+            <h4>Dev Burguer</h4>
+
+            <p>
+              Site de uma Hamburgeria desenvolvido através de aulas no Youtube.
+            </p>
+
+            <a href="https://juliooguedes.github.io/barbershop/" target="_blank"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+        <div class="portfolio-box">
+          <img src="img/BarberShop.png" alt="Portfolio 1" />
+
+          <div class="portfolio-layer">
+            <h4>Barber Shop</h4>
+
+            <p>
+              Site de uma Barbearia desenvolvido através de aulas no Youtube.
+            </p>
+
+            <a href="#"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+        <div class="portfolio-box">
+          <img src="img/Jogo do numero.png" alt="Portfolio 1" />
+
+          <div class="portfolio-layer">
+            <h4>Número Secreto</h4>
+
+            <p>
+              Logica de programção desenvolvida em aulas do curso da Alura.
+            </p>
+
+            <a href="https://jogo-five-iota-77.vercel.app/" target="_blank"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+        <div class="portfolio-box">
+          <img src="img/Repositorio.png" alt="Portfolio 1" />
+
+          <div class="portfolio-layer">
+            <h4>Repositorio</h4>
+
+            <p>
+              Acompanhe meu repositoria e confira projetos em JAVA, JAVASCRIPT, HTML e mais... 
+            </p>
+
+            <a href="https://github.com/juliooguedes?tab=repositories" target="_blank"><i class="bx bx-link-external"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="portfolio-container">
+            <div class="portfolio-box">
+                
+
+                <div class="portfolio-layer">
+                    <h4>Web Development</h4>
+
+                    <p>
+                        Accusamus, labore atque consectetur iste corrupti suscipit commodi quo repudiandae eius cum, impedit sed neque rerum excepturi ipsa vero! Ut dolorum autem nostrum assumenda. Repellat modi voluptas molestiae placeat cumque! Id voluptatibus quos vitae laudantium vero placeat tempora asperiores! Cum culpa corporis non quisquam aspernatur neque soluta incidunt saepe officiis ipsum labore dolorum sit ipsa, repellendus excepturi, sapiente ullam odit nihil! 
+                    </p>
+
+                    <a href="#"><box-icon name='link-external'></box-icon></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="img/Dev Burguer.jpg" alt="Portfolio 2">
+
+                <div class="portfolio-layer">
+                    <h4>Web Development</h4>
+
+                    <p>
+                        Accusamus, labore atque consectetur iste corrupti suscipit commodi quo repudiandae eius cum, impedit sed neque rerum excepturi ipsa vero! Ut dolorum autem nostrum assumenda. Repellat modi voluptas molestiae placeat cumque! Id voluptatibus quos vitae laudantium vero placeat tempora asperiores! Cum culpa corporis non quisquam aspernatur neque soluta incidunt saepe officiis ipsum labore dolorum sit ipsa, repellendus excepturi, sapiente ullam odit nihil! 
+                    </p>
+
+                    <a href="#"><box-icon name='link-external'></box-icon></a>
+                </div>
+            </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="img/lista de tarefas.jpg" alt="Portfolio 3">
+
+                <div class="portfolio-layer">
+                    <h4>Web Development</h4>
+
+                    <p>
+                        Accusamus, labore atque consectetur iste corrupti suscipit commodi quo repudiandae eius cum, impedit sed neque rerum excepturi ipsa vero! Ut dolorum autem nostrum assumenda. Repellat modi voluptas molestiae placeat cumque! Id voluptatibus quos vitae laudantium vero placeat tempora asperiores! Cum culpa corporis non quisquam aspernatur neque soluta incidunt saepe officiis ipsum labore dolorum sit ipsa, repellendus excepturi, sapiente ullam odit nihil! 
+                    </p>
+
+                    <a href="#"><box-icon name='link-external'></box-icon></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="img/Barber Shop.jpg" alt="Portfolio 4">
+
+                <div class="portfolio-layer">
+                    <h4>Web Development</h4>
+
+                    <p>
+                        Accusamus, labore atque consectetur iste corrupti suscipit commodi quo repudiandae eius cum, impedit sed neque rerum excepturi ipsa vero! Ut dolorum autem nostrum assumenda. Repellat modi voluptas molestiae placeat cumque! Id voluptatibus quos vitae laudantium vero placeat tempora asperiores! Cum culpa corporis non quisquam aspernatur neque soluta incidunt saepe officiis ipsum labore dolorum sit ipsa, repellendus excepturi, sapiente ullam odit nihil! 
+                    </p>
+
+                    <a href="#"><box-icon name='link-external'></box-icon></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="img/Dev Burguer.jpg" alt="Portfolio 5"> 
+
+                <div class="portfolio-layer">
+                    <h4>Web Development</h4>
+
+                    <p>
+                        Accusamus, labore atque consectetur iste corrupti suscipit commodi quo repudiandae eius cum, impedit sed neque rerum excepturi ipsa vero! Ut dolorum autem nostrum assumenda. Repellat modi voluptas molestiae placeat cumque! Id voluptatibus quos vitae laudantium vero placeat tempora asperiores! Cum culpa corporis non quisquam aspernatur neque soluta incidunt saepe officiis ipsum labore dolorum sit ipsa, repellendus excepturi, sapiente ullam odit nihil! 
+                    </p>
+
+                    <a href="#"><box-icon name='link-external'></box-icon></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="img/lista de tarefas.jpg" alt="Portfolio 6">
+
+                <div class="portfolio-layer">
+                    <h4>Web Development</h4>
+
+                    <p>
+                        Accusamus, labore atque consectetur iste corrupti suscipit commodi quo repudiandae eius cum, impedit sed neque rerum excepturi ipsa vero! Ut dolorum autem nostrum assumenda. Repellat modi voluptas molestiae placeat cumque! Id voluptatibus quos vitae laudantium vero placeat tempora asperiores! Cum culpa corporis non quisquam aspernatur neque soluta incidunt saepe officiis ipsum labore dolorum sit ipsa, repellendus excepturi, sapiente ullam odit nihil! 
+                    </p>
+
+                    <a href="#"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+        </div> -->
+    </section>
+    <!-- /portfolio section -->
+
+    <!-- contact section -->
+    <!-- <section class="contact" id="contact">
+        <h2>Contact <span>Me</span></h2>
+
+        <form action="" method="">
+            <div class="input-box">
+                <input type="text" placeholder="Nome">
+                <input type="email" placeholder="E-mail">                
             </div>
 
-    </header>
+            <div class="input-box">
+                <input type="number" placeholder="Whats-app">
+                <input type="text" placeholder="Assunto">                
+            </div>
+
+            <textarea cols="30" rows="8" placeholder="Digite aqui!"></textarea>
+
+            <a href="#" class="btn">Enviar</a>
+
+        </form>
+      </section> -->
+
+    <!-- /contact section -->
+
+    <!-- about section -->
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="img/profile.jpeg" alt="profile about" />
+      </div>
+
+      <div class="about-content">
+        <h3>Quem sou eu?</h3>
+        <h1>Desenvolvedor <span>Full-Stack</span></h1>
+
+        <p>
+            Profissional com mais de 3 anos de experiência como
+            Técnico em Bombas de Combustíveis, especializado na
+            instalação, manutenção e reparo de sistemas de
+            abastecimento, garantindo segurança e eficiência
+            operacional. Em transição para a área de tecnologia,
+            cursando Análise e Desenvolvimento de Sistemas e
+            aprimorando habilidades técnicas com cursos práticos na
+            Alura. Proativo e analítico, busco aplicar meus
+            conhecimentos no desenvolvimento de soluções inovadoras
+            em ambientes colaborativos e dinâmicos.
+        </p>
+
+        <a href="https://wa.me/5531983247638?text=Ol%C3%A1%2C%20vim%20atrav%C3%A9s%20do%20seu%20portfolio!" class="btn" target="_blank">Contato</a>
+      </div>
+    </section>
+    <!-- about section -->
+
     <footer class="footer">
-        <p>FEITO POR JULIO GUEDES</p>
+      <p>Copyrigth &copy; 2025 by Julio Guedes</p>
     </footer>
 
     <script src="script.js"></script>
-
-</body>
-
+  </body>
 </html>
